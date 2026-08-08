@@ -101,7 +101,7 @@
     "name": "homayoun-safarpour/judge-drift-sentinel",
     "url": "https://github.com/homayoun-safarpour/judge-drift-sentinel",
     "category": "A",
-    "why": "Re-scores a frozen anchor set to tell judge drift apart from system drift.",
+    "why": "Re-scores a frozen anchor set to tell judge drift apart from system drift; history mode catches multi-run decay.",
     "last_verified": "2026-08-08"
   },
   {
