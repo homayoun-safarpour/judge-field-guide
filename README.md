@@ -1,4 +1,4 @@
-# judge-field-guide
+﻿# judge-field-guide
 
 **Awesome-lists rot. Links die, projects go stale, and nobody notices until a reader hits a 404. This map is link-checked in CI, not frozen the day it was written.**
 
@@ -61,6 +61,10 @@ fork freely.
 - [judge-reliability-kit](https://github.com/homayoun-safarpour/judge-reliability-kit) - why a judge panel disagrees (kappa)
 - [judge-drift-sentinel](https://github.com/homayoun-safarpour/judge-drift-sentinel) - judge vs system drift
 - [trace-gate](https://github.com/homayoun-safarpour/trace-gate) - trajectory deploy gate
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Author
 
