@@ -4,9 +4,9 @@ Thanks for helping keep the judge-tool map honest.
 
 ## Ways to help
 
-1. **Add one registry entry** (preferred) — see open good-first-issue for the checklist.
-2. **Report a dead link** — open an issue with the entry `name` and the HTTP status you saw.
-3. **Fix docs** — README / reliability card / interview pack only; keep senior-engineer register (no portfolio/demo filler).
+1. **Add one registry entry** (preferred) - see open good-first-issue for the checklist.
+2. **Report a dead link** - open an issue with the entry `name` and the HTTP status you saw.
+3. **Fix docs** - README / reliability card / interview pack only; keep senior-engineer register (no portfolio/demo filler).
 
 ## Rules
 
