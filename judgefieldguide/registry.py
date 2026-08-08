@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
 VALID_CATEGORIES = {"A", "B", "C", "D"}
-REQUIRED_FIELDS = {"name", "url", "category", "why"}
+REQUIRED_FIELDS = {"name", "url", "category", "why", "last_verified"}
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 class RegistryError(ValueError):
@@ -27,6 +29,10 @@ def load_registry(path: str | Path) -> list[dict[str, Any]]:
         if entry["category"] not in VALID_CATEGORIES:
             raise RegistryError(
                 f"entry {i} ({entry['name']}) has invalid category {entry['category']!r}"
+            )
+        if not DATE_RE.match(str(entry["last_verified"])):
+            raise RegistryError(
+                f"entry {i} ({entry['name']}) last_verified must be YYYY-MM-DD"
             )
         if entry["url"] in seen_urls:
             raise RegistryError(f"duplicate url: {entry['url']}")

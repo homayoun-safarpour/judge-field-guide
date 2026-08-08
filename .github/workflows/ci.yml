@@ -28,6 +28,7 @@ jobs:
     continue-on-error: true
     permissions:
       issues: write
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -38,6 +39,15 @@ jobs:
         id: linkcheck
         run: python -m judgefieldguide.check_links | tee link-report.txt
         continue-on-error: true
+      - name: Stamp last_verified after green scheduled check
+        if: steps.linkcheck.outcome == 'success' && github.event_name == 'schedule'
+        run: |
+          python -m judgefieldguide.stamp_verified
+          git config user.name "Homayoun"
+          git config user.email "homayoun.safarpour@gmail.com"
+          git add data/registry.json
+          git diff --cached --quiet || git commit -m "chore(registry): stamp last_verified after weekly link-check"
+          git push || true
       - name: Open issue on dead link (scheduled runs only)
         if: steps.linkcheck.outcome == 'failure' && github.event_name == 'schedule'
         env:
