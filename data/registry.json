@@ -110,5 +110,33 @@
     "category": "C",
     "why": "Frozen-baseline trajectory regression gate with exit-code contracts.",
     "last_verified": "2026-08-08"
+  },
+  {
+    "name": "CSHaitao/Awesome-LLMs-as-Judges",
+    "url": "https://github.com/CSHaitao/Awesome-LLMs-as-Judges",
+    "category": "D",
+    "why": "Survey-linked awesome list for LLM-based evaluation methods; broader paper+tool map than a single benchmark.",
+    "last_verified": "2026-08-08"
+  },
+  {
+    "name": "llm-as-a-judge/Awesome-LLM-as-a-judge",
+    "url": "https://github.com/llm-as-a-judge/Awesome-LLM-as-a-judge",
+    "category": "D",
+    "why": "Community hub for LLM-as-a-judge papers and tooling; useful discovery surface next to curated instrument maps.",
+    "last_verified": "2026-08-08"
+  },
+  {
+    "name": "haizelabs/verdict",
+    "url": "https://github.com/haizelabs/verdict",
+    "category": "A",
+    "why": "Inference-time scaling for LLM-as-a-judge; adjacent to meta-eval reliability work.",
+    "last_verified": "2026-08-08"
+  },
+  {
+    "name": "agentevals-dev/agentevals",
+    "url": "https://github.com/agentevals-dev/agentevals",
+    "category": "C",
+    "why": "Framework-agnostic agent evals on OpenTelemetry traces; comparison point for trajectory gates.",
+    "last_verified": "2026-08-08"
   }
 ]
