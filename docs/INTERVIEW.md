@@ -4,7 +4,7 @@
 - **`pytest tests/test_check_links.py`** : pass/fail logic tested with a fake fetcher, so CI never depends on network flakiness for the blocking gate.
 - **`pytest tests/test_registry.py`** : schema gate - required fields, valid A-D categories, no duplicate names/urls - catches copy-paste errors before they ship.
 - **Weekly cron `link-check` job** : non-blocking on PRs, but gives a dated, verifiable "still alive" signal instead of a link list frozen the day it was written.
-- **Composes with the face stack** : registry entries link back to `judge-reliability-kit`, `judge-drift-sentinel`, and `trace-gate` so the map doubles as a discovery path into the rest of the instruments.
+- **Composes with the face stack** : registry entries link back to `judge-reliability-kit`, `judge-drift-sentinel` (including the multi-run `examples/drifting/` history fixture), and `trace-gate` so the map doubles as a discovery path into the rest of the instruments.
 
 ## Three questions
 
