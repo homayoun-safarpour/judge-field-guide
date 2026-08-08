@@ -1,0 +1,98 @@
+[
+  {
+    "name": "haizelabs/Awesome-LLM-Judges",
+    "url": "https://github.com/haizelabs/Awesome-LLM-Judges",
+    "category": "D",
+    "why": "Broadest curated link list of the judge ecosystem; starting map for this registry (unlicensed - not forked, independently re-curated here with tested links)."
+  },
+  {
+    "name": "allenai/reward-bench",
+    "url": "https://github.com/allenai/reward-bench",
+    "category": "A",
+    "why": "Canonical reward-model / judge benchmark; still the north star for meta-eval comparisons."
+  },
+  {
+    "name": "ianarawjo/evalstats",
+    "url": "https://github.com/ianarawjo/evalstats",
+    "category": "A",
+    "why": "Statistics for LLM evals aimed at judge-bias-resilient inference."
+  },
+  {
+    "name": "UW-Madison-Lee-Lab/LLM-judge-reporting",
+    "url": "https://github.com/UW-Madison-Lee-Lab/LLM-judge-reporting",
+    "category": "A",
+    "why": "Bias correction and confidence intervals for LLM-as-judge reporting."
+  },
+  {
+    "name": "DaoyuanLi2816/pairjudge",
+    "url": "https://github.com/DaoyuanLi2816/pairjudge",
+    "category": "A",
+    "why": "Pairwise judges with position-bias correction."
+  },
+  {
+    "name": "GiuseppeCastro/judge-jitter",
+    "url": "https://github.com/GiuseppeCastro/judge-jitter",
+    "category": "A",
+    "why": "Small CLI focused on score instability in LLM-as-judge setups."
+  },
+  {
+    "name": "Shreyaskc/BabelJudge",
+    "url": "https://github.com/Shreyaskc/BabelJudge",
+    "category": "A",
+    "why": "Bias audit across languages plus agent trajectory judging."
+  },
+  {
+    "name": "databricks/judges",
+    "url": "https://github.com/databricks/judges",
+    "category": "D",
+    "why": "Small enterprise-maintained library of ready-made LLM judges."
+  },
+  {
+    "name": "qualifire-dev/rogue",
+    "url": "https://github.com/qualifire-dev/rogue",
+    "category": "C",
+    "why": "Agent evaluator and red-team platform; large surface, useful as a comparison point."
+  },
+  {
+    "name": "microsoft/eval-guide",
+    "url": "https://github.com/microsoft/eval-guide",
+    "category": "C",
+    "why": "Eval-planning plugin grounded in production eval playbooks."
+  },
+  {
+    "name": "gy15901580825/Argus",
+    "url": "https://github.com/gy15901580825/Argus",
+    "category": "C",
+    "why": "Agent red-team findings piped to SARIF for CI Code Scanning gates."
+  },
+  {
+    "name": "ScalerLab/JudgeBench",
+    "url": "https://github.com/ScalerLab/JudgeBench",
+    "category": "B",
+    "why": "Benchmark specifically for testing LLM judges against harder cases."
+  },
+  {
+    "name": "baaivision/JudgeLM",
+    "url": "https://github.com/baaivision/JudgeLM",
+    "category": "B",
+    "why": "Fine-tuned judge model plus benchmark for scalable open-ended evaluation."
+  },
+  {
+    "name": "homayoun-safarpour/judge-reliability-kit",
+    "url": "https://github.com/homayoun-safarpour/judge-reliability-kit",
+    "category": "A",
+    "why": "Decomposes why a judge panel disagrees: item ambiguity vs rubric underspecification."
+  },
+  {
+    "name": "homayoun-safarpour/judge-drift-sentinel",
+    "url": "https://github.com/homayoun-safarpour/judge-drift-sentinel",
+    "category": "A",
+    "why": "Re-scores a frozen anchor set to tell judge drift apart from system drift."
+  },
+  {
+    "name": "homayoun-safarpour/trace-gate",
+    "url": "https://github.com/homayoun-safarpour/trace-gate",
+    "category": "C",
+    "why": "Frozen-baseline trajectory regression gate with exit-code contracts."
+  }
+]
