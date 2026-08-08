@@ -26,10 +26,31 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     continue-on-error: true
+    permissions:
+      issues: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -e .
-      - run: python -m judgefieldguide.check_links
+      - name: Run link check
+        id: linkcheck
+        run: python -m judgefieldguide.check_links | tee link-report.txt
+        continue-on-error: true
+      - name: Open issue on dead link (scheduled runs only)
+        if: steps.linkcheck.outcome == 'failure' && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh issue list --label link-rot --state open --json number --jq '. | length' | grep -qv '^0$'; then
+            echo "Open link-rot issue already exists, skipping."
+            exit 0
+          fi
+          gh issue create \
+            --title "Weekly link-check found a dead registry entry" \
+            --label link-rot \
+            --body-file link-report.txt
+      - name: Fail job if links were dead
+        if: steps.linkcheck.outcome == 'failure'
+        run: exit 1
