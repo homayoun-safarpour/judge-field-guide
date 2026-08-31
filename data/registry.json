@@ -4,139 +4,139 @@
     "url": "https://github.com/haizelabs/Awesome-LLM-Judges",
     "category": "D",
     "why": "Broadest curated link list of the judge ecosystem; starting map for this registry (unlicensed - not forked, independently re-curated here with tested links).",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "allenai/reward-bench",
     "url": "https://github.com/allenai/reward-bench",
     "category": "A",
     "why": "Canonical reward-model / judge benchmark; still the north star for meta-eval comparisons.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "ianarawjo/evalstats",
     "url": "https://github.com/ianarawjo/evalstats",
     "category": "A",
     "why": "Statistics for LLM evals aimed at judge-bias-resilient inference.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "UW-Madison-Lee-Lab/LLM-judge-reporting",
     "url": "https://github.com/UW-Madison-Lee-Lab/LLM-judge-reporting",
     "category": "A",
     "why": "Bias correction and confidence intervals for LLM-as-judge reporting.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "DaoyuanLi2816/pairjudge",
     "url": "https://github.com/DaoyuanLi2816/pairjudge",
     "category": "A",
     "why": "Pairwise judges with position-bias correction.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "GiuseppeCastro/judge-jitter",
     "url": "https://github.com/GiuseppeCastro/judge-jitter",
     "category": "A",
     "why": "Small CLI focused on score instability in LLM-as-judge setups.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "Shreyaskc/BabelJudge",
     "url": "https://github.com/Shreyaskc/BabelJudge",
     "category": "A",
     "why": "Bias audit across languages plus agent trajectory judging.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "databricks/judges",
     "url": "https://github.com/databricks/judges",
     "category": "D",
     "why": "Small enterprise-maintained library of ready-made LLM judges.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "qualifire-dev/rogue",
     "url": "https://github.com/qualifire-dev/rogue",
     "category": "C",
     "why": "Agent evaluator and red-team platform; large surface, useful as a comparison point.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "microsoft/eval-guide",
     "url": "https://github.com/microsoft/eval-guide",
     "category": "C",
     "why": "Eval-planning plugin grounded in production eval playbooks.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "gy15901580825/Argus",
     "url": "https://github.com/gy15901580825/Argus",
     "category": "C",
     "why": "Agent red-team findings piped to SARIF for CI Code Scanning gates.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "ScalerLab/JudgeBench",
     "url": "https://github.com/ScalerLab/JudgeBench",
     "category": "B",
     "why": "Benchmark specifically for testing LLM judges against harder cases.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "baaivision/JudgeLM",
     "url": "https://github.com/baaivision/JudgeLM",
     "category": "B",
     "why": "Fine-tuned judge model plus benchmark for scalable open-ended evaluation.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "homayoun-safarpour/judge-reliability-kit",
     "url": "https://github.com/homayoun-safarpour/judge-reliability-kit",
     "category": "A",
     "why": "Decomposes why a judge panel disagrees: item ambiguity vs rubric underspecification.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "homayoun-safarpour/judge-drift-sentinel",
     "url": "https://github.com/homayoun-safarpour/judge-drift-sentinel",
     "category": "A",
     "why": "Re-scores a frozen anchor set to tell judge drift apart from system drift; history mode catches multi-run decay.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "homayoun-safarpour/trace-gate",
     "url": "https://github.com/homayoun-safarpour/trace-gate",
     "category": "C",
     "why": "Frozen-baseline trajectory regression gate with exit-code contracts.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "CSHaitao/Awesome-LLMs-as-Judges",
     "url": "https://github.com/CSHaitao/Awesome-LLMs-as-Judges",
     "category": "D",
     "why": "Survey-linked awesome list for LLM-based evaluation methods; broader paper+tool map than a single benchmark.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "llm-as-a-judge/Awesome-LLM-as-a-judge",
     "url": "https://github.com/llm-as-a-judge/Awesome-LLM-as-a-judge",
     "category": "D",
     "why": "Community hub for LLM-as-a-judge papers and tooling; useful discovery surface next to curated instrument maps.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "haizelabs/verdict",
     "url": "https://github.com/haizelabs/verdict",
     "category": "A",
     "why": "Inference-time scaling for LLM-as-a-judge; adjacent to meta-eval reliability work.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   },
   {
     "name": "agentevals-dev/agentevals",
     "url": "https://github.com/agentevals-dev/agentevals",
     "category": "C",
     "why": "Framework-agnostic agent evals on OpenTelemetry traces; comparison point for trajectory gates.",
-    "last_verified": "2026-08-24"
+    "last_verified": "2026-08-31"
   }
 ]
