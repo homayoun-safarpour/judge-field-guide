@@ -138,5 +138,12 @@
     "category": "C",
     "why": "Framework-agnostic agent evals on OpenTelemetry traces; comparison point for trajectory gates.",
     "last_verified": "2026-09-07"
+  },
+  {
+    "name": "yylo-dev/yylo-benchmark",
+    "url": "https://github.com/yylo-dev/yylo-benchmark",
+    "category": "C",
+    "why": "Isolated and governed evaluation lanes for coding-agent runs: private fresh-repository attempt workspaces, deterministic and LLM-judge evaluator profiles with blinded per-step judging, and receipt/manifest/provenance hashes linked through terminal, evidence, and state.",
+    "last_verified": "2026-09-11"
   }
 ]
