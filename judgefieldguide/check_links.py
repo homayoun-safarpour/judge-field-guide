@@ -7,6 +7,7 @@ monkeypatch it and exercise the pass/fail logic with zero network access.
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 import urllib.error
 import urllib.request
@@ -59,15 +60,39 @@ def format_report(results: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
+def stub_fetch(mapping: dict[str, Any]):
+    """Return a fetch function that never touches the network."""
+
+    def fetch(url: str, timeout: float = 10.0) -> int | None:
+        if url not in mapping:
+            return None
+        status = mapping[url]
+        return None if status is None else int(status)
+
+    return fetch
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--registry", default=str(Path(__file__).parent.parent / "data" / "registry.json")
     )
+    parser.add_argument(
+        "--stub-status",
+        default=None,
+        help="JSON object mapping url to HTTP status (or null). Skips the network.",
+    )
     args = parser.parse_args(argv)
 
     entries = load_registry(args.registry)
-    results = check_all(entries)
+    fetch = fetch_status
+    if args.stub_status:
+        raw = json.loads(Path(args.stub_status).read_text(encoding="utf-8"))
+        if not isinstance(raw, dict):
+            print("--stub-status must be a JSON object", file=sys.stderr)
+            return 1
+        fetch = stub_fetch(raw)
+    results = check_all(entries, fetch=fetch)
     print(format_report(results))
     return evaluate(results)
 

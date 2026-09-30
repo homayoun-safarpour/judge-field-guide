@@ -1,0 +1,23 @@
+[
+  {
+    "name": "alive-one",
+    "url": "https://example.com/a",
+    "category": "A",
+    "why": "Control row that stays up.",
+    "last_verified": "2026-09-30"
+  },
+  {
+    "name": "dead-one",
+    "url": "https://example.com/b",
+    "category": "A",
+    "why": "Stranger fail row: 404 in the stub map.",
+    "last_verified": "2026-09-30"
+  },
+  {
+    "name": "timeout-one",
+    "url": "https://example.com/c",
+    "category": "A",
+    "why": "Missing from the stub map, treated as network failure.",
+    "last_verified": "2026-09-30"
+  }
+]
