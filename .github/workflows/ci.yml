@@ -44,7 +44,7 @@ jobs:
         run: |
           python -m judgefieldguide.stamp_verified
           git config user.name "Homayoun"
-          git config user.email "homayoun.safarpour@gmail.com"
+          git config user.email "129149267+homayoun-safarpour@users.noreply.github.com"
           git add data/registry.json
           git diff --cached --quiet || git commit -m "chore(registry): stamp last_verified after weekly link-check"
           git push || true
