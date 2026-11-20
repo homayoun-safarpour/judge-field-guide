@@ -6,7 +6,7 @@
 ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-Link-checked map of tools for language-model judges, with a checker that names dead links (exit 0 or 2).
+LLM-as-judge tools: link-checked map of tools for language-model judges, with a checker that names dead links (exit 0 or 2).
 
 judge-field-guide is a map of 20 open-source tools for language-model judges, kept as one JSON file with a tested link checker. We built it because the links in a curated list stop working over time, and a reader usually finds a dead link before the maintainer does. Given a registry file, the checker sends a HEAD request to each URL and counts a status from 200 to 399 as alive, while an error status or no answer counts as dead. It prints each entry with its HTTP status and returns exit 0 when every link is alive or 2 when any is dead, so that CI names the dead entries.
 
@@ -28,6 +28,10 @@ Dead: dead-one, timeout-one
 ```
 
 That command exits 2. `--stub-status` replaces the network with a fixed map of URL to status, and a URL missing from the map counts as no answer.
+
+![judge-field-guide: tool registry is checked by one HEAD request per link; the result is DEAD LINKS with exit 2](docs/readme-flow.svg)
+
+[How it works](#how-it-works) · [Results](#what-each-result-means) · [Limits](#limits) · [Interview pack](docs/INTERVIEW.md) · Part of [a small open stack for checking AI agents and their judges](https://homayoun-safarpour.github.io)
 
 ## What each result means
 
