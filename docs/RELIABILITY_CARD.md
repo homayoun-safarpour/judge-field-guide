@@ -4,9 +4,9 @@
 | --- | --- |
 | **Job** | Keep a map of the LLM-judge tool ecosystem from rotting |
 | **Primary signal** | `judge-field-guide` / `python -m judgefieldguide.check_links` exit 0/2 against `data/registry.json` |
-| **Claim** | Every URL answered 200-3xx on last green link-check; each entry carries `last_verified` YYYY-MM-DD |
+| **Claim** | Every URL answered 2xx after redirects on the last green link-check; each entry carries `last_verified` YYYY-MM-DD, stamped only for entries that check marked alive |
 | **Not claimed** | Quality, stars, or maintenance status of the linked tools - only that the link resolves |
-| **Not claimed** | Completeness - this is a curated slice (16 entries at v0.1), not an exhaustive index |
+| **Not claimed** | Completeness - this is a curated slice (20 entries at v0.1), not an exhaustive index |
 
 ## Categories (from field-pattern synthesis)
 

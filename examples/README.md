@@ -13,7 +13,7 @@ For a real (network) run against the live registry:
 python -m judgefieldguide.check_links
 ```
 
-Exit `0` means every URL in `data/registry.json` answered 200-3xx. Exit `2` prints which
+Exit `0` means every URL in `data/registry.json` answered 2xx after redirects. Exit `2` prints which
 entries are dead so you know what to fix or retire before trusting the map.
 
 | Path | What it shows |

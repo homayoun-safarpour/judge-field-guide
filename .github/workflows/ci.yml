@@ -25,7 +25,9 @@ jobs:
   link-check:
     runs-on: ubuntu-latest
     needs: test
-    continue-on-error: true
+    # A dead link fails this job. On push and pull request runs the failure does not
+    # block the build; on the Monday run it does, so the scheduled run shows red.
+    continue-on-error: ${{ github.event_name != 'schedule' }}
     permissions:
       issues: write
       contents: write
@@ -37,12 +39,15 @@ jobs:
       - run: pip install -e .
       - name: Run link check
         id: linkcheck
-        run: python -m judgefieldguide.check_links | tee link-report.txt
+        shell: bash
+        run: |
+          set -o pipefail
+          python -m judgefieldguide.check_links --report-json link-report.json | tee link-report.txt
         continue-on-error: true
       - name: Stamp last_verified after green scheduled check
         if: steps.linkcheck.outcome == 'success' && github.event_name == 'schedule'
         run: |
-          python -m judgefieldguide.stamp_verified
+          python -m judgefieldguide.stamp_verified --report link-report.json
           git config user.name "Homayoun"
           git config user.email "129149267+homayoun-safarpour@users.noreply.github.com"
           git add data/registry.json
