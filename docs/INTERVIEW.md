@@ -15,8 +15,8 @@
    Stars measure popularity, not the job a tool does. The categories mirror the actual reasoning pattern (meta-eval, benchmark, gate, harness) so a reader picks by need, not by hype.
 
 3. **What would you add next?**
-   Auto-opening a GitHub issue when the weekly link-check job finds a dead link, so the registry self-reports rot instead of waiting for a human to notice.
+   A GET fallback for servers that refuse HEAD, so a page that opens in a browser is not reported dead. (The weekly job already opens a `link-rot` issue when it finds a dead link.)
 
 ## One limitation
 
-16 entries is a slice, not a census; the categorization is a judgment call by one person, not a community vote.
+20 entries is a slice, not a census; the categorization is a judgment call by one person, not a community vote.
